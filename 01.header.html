@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.menu {
+				width: 1000px;
+				height: 142px;
+				position: absolute;
+				top: 300px;
+				left: 300px;
+			}
+			
+			.tips {
+				width: 110px;
+				height: 110px;
+				border: 5px solid whitesmoke;
+				border-color: red white white white;
+				border-width: 5px;
+				border-radius: 50%;
+				position: absolute;
+				left: 45px;
+				top: 16px;
+				text-align: center;
+				transform: rotate(-0deg);
+				transition: all 1s ease 0s;
+			}
+			
+			.tips2 {
+				left: 225px;
+			}
+			
+			.tips3 {
+				left: 405px;
+			}
+			
+			.tips4 {
+				left: 585px;
+			}
+			
+			.tips5 {
+				left: 765px;
+			}
+			
+			.tips:hover {
+				transform: rotate(360deg);
+			}
+			
+			.main:nth-child(1){
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: cadetblue;
+				float: left;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				
+			}
+			.main1:hover {
+				background-color: darkturquoise;
+				
+			}
+			
+			.main2:hover {
+				background-color: green;
+			}
+			
+			.main3:hover {
+				background-color: orange;
+			}
+			
+			.main4:hover {
+				background-color: blue;
+			}
+			
+			.main5:hover {
+				background-color: mediumvioletred;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="menu">
+			<img src="img/tb_0.jpg" alt="" />
+			<div class="tips tips1">
+				<div class="main main1">
+					<img src="img/tb_1.png" />
+					<p>我要约考</p>
+				</div>
+			</div>
+			<div class="tips tips2">
+				<div class="main main2">
+					<img src="img/tb_2.png" />
+					<p>班型介绍</p>
+				</div>
+			</div>
+			<div class="tips tips3">
+				<div class="main main3">
+					<img src="img/tb_3.png" />
+					<p>班车服务</p>
+				</div>
+			</div>
+			<div class="tips tips4">
+				<div class="main main4">
+					<img src="img/tb_4.png" />
+					<p>在线法赔</p>
+				</div>
+			</div>
+			<div class="tips tips5">
+				<div class="main main5">
+					<img src="img/tb_5.png" />
+					<p>网上约车</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="http://zc991.cn/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(".box").mousemove(function() {　
+			var parent = this.parentNode;
+			$(parent).css("background", "red")
+		})
+		$(".box").mouseout(function() {　
+			var parent = this.parentNode;
+			$(parent).css("background", "orange")
+		})
+	</script>
+
+</html>
